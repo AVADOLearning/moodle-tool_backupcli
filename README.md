@@ -30,3 +30,15 @@ Or activity:
 ```
 $ php admin/tool/backupcli/cli/backup.php --type=activity --id=123 --file=$HOME/backup-123.mbz
 ```
+
+Restore a backup to a new course in th specified category:
+
+```
+$ php admin/tool/backupcli/cli/restore.php --file=$HOME/backup-123.mbz --categoryid=1
+```
+
+Or overwrite the specified course, deleting existing content:
+
+```
+$ php admin/tool/backupcli/cli/restore.php --file=$HOME/backup-123.mbz --courseid=123
+```
