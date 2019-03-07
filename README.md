@@ -42,3 +42,6 @@ Or overwrite the specified course, deleting existing content:
 ```
 $ php admin/tool/backupcli/cli/restore.php --file=$HOME/backup-123.mbz --courseid=123
 ```
+
+If you're backing up a course and restoring to the same site, be sure to use
+the `--samesite` option for a hefty improvement in performance.
